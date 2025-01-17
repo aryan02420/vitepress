@@ -11,7 +11,7 @@ const { hasSidebar } = useSidebar()
 </script>
 
 <template>
-  <div
+  <main
     class="VPContent"
     id="VPContent"
     :class="{
@@ -58,7 +58,7 @@ const { hasSidebar } = useSidebar()
       <template #aside-ads-after><slot name="aside-ads-after" /></template>
       <template #aside-bottom><slot name="aside-bottom" /></template>
     </VPDoc>
-  </div>
+  </main>
 </template>
 
 <style scoped>
