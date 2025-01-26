@@ -39,10 +39,10 @@ const pageName = computed(() =>
         </div>
       </div>
 
-      <div class="content">
+      <article class="content">
         <div class="content-container">
           <slot name="doc-before" />
-          <article class="main">
+          <div class="main">
             <Content
               class="vp-doc"
               :class="[
@@ -50,13 +50,13 @@ const pageName = computed(() =>
                 theme.externalLinkIcon && 'external-link-icon-enabled'
               ]"
             />
-          </article>
+          </div>
           <VPDocFooter>
             <template #doc-footer-before><slot name="doc-footer-before" /></template>
           </VPDocFooter>
           <slot name="doc-after" />
         </div>
-      </div>
+      </article>
     </div>
     <slot name="doc-bottom" />
   </div>
